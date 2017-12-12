@@ -49,8 +49,8 @@ endfunction
 
 " NOTE: set hlsearch does not work in a function
 vnoremap <silent> <Plug>AckActionVisual :<C-U>call <SID>Ack(visualmode())<CR>
-nnoremap <silent> <Plug>AckAction       :set hlsearch<CR>:<C-U>set opfunc=<SID>Ack<CR>g@
-nnoremap <silent> <Plug>AckActionWord   :set hlsearch<CR>:<C-U>set opfunc=<SID>Ack<CR>g@iw
+nnoremap <silent> <Plug>AckAction       :<C-U>set opfunc=<SID>Ack<CR>g@
+nnoremap <silent> <Plug>AckActionWord   :<C-U>set opfunc=<SID>Ack<CR>g@iw
 
 vmap ga <Plug>AckActionVisual
 nmap ga <Plug>AckAction
