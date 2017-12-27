@@ -41,7 +41,7 @@ function! s:Ack(mode) abort
   exe ":Ack!" "'".escaped_for_ack."'"
 
   " go to the first search match
-  normal! n
+  " normal! n
 
   " recover @@ register
   let @@ = reg_save
